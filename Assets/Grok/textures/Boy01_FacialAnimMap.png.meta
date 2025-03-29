@@ -1,0 +1,2949 @@
+fileFormatVersion: 2
+guid: 899656bc4ea9087408c6f9f9451f2197
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 2
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_0
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3811
+        width: 232
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a80d66d5487c0ad4fa3962b3e3a6688f
+      internalID: -1359588525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_1
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 3811
+        width: 232
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a19c7823b0fa84791bb294609a5dab
+      internalID: 1477585321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_2
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 3839
+        width: 234
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e062275c982fb354ea46126914ff569c
+      internalID: -1632394824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_3
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 3839
+        width: 232
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38036ee83dc252343b83825a19524fc9
+      internalID: 841442298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_4
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 3803
+        width: 242
+        height: 152
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b99a7384ddb4324a8cd65a9ec36b83b
+      internalID: -648319801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_5
+      rect:
+        serializedVersion: 2
+        x: 2127
+        y: 3793
+        width: 246
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5055c4f27484f2441b1477f5e0acfd47
+      internalID: -1978515203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_6
+      rect:
+        serializedVersion: 2
+        x: 2545
+        y: 3865
+        width: 232
+        height: 60
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ea43d679ada05458345625f1b28ae7
+      internalID: -604394204
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_7
+      rect:
+        serializedVersion: 2
+        x: 2961
+        y: 3861
+        width: 216
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa80cb9f0d07ada4c9116656bc080257
+      internalID: -1633439851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_8
+      rect:
+        serializedVersion: 2
+        x: 3341
+        y: 3857
+        width: 238
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca209fe3c612b9478f8a36402624f3e
+      internalID: -1290446302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_9
+      rect:
+        serializedVersion: 2
+        x: 3893
+        y: 3925
+        width: 148
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74109dd481672f4f80ed086a7e95c00
+      internalID: -1777233023
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_10
+      rect:
+        serializedVersion: 2
+        x: 3743
+        y: 3739
+        width: 148
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3ae560a3cde544593f55704dce7012
+      internalID: 1316542906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_11
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 3403
+        width: 232
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f5d89b143c7c2c41b224aab96448d87
+      internalID: -1860138494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_12
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 3403
+        width: 232
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c2dcf064300bf4ab7a8744063163a5
+      internalID: 936806861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_13
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 3429
+        width: 234
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350257b3db4f8d7459178549d4cbaa34
+      internalID: -119217690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_14
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 3429
+        width: 232
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07f5c6b39ac66024b8f9a73a1609e82a
+      internalID: -1440972393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_15
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 3403
+        width: 232
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5a80a49fab4f1347b8d7e02422e0eaf
+      internalID: -1126528654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_16
+      rect:
+        serializedVersion: 2
+        x: 2541
+        y: 3465
+        width: 242
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24d9ab8d019f01439bcadeeddd76b99
+      internalID: -1037241656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_17
+      rect:
+        serializedVersion: 2
+        x: 2961
+        y: 3393
+        width: 198
+        height: 136
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91fe4ee53fb6e7a48bf1e1bdbdf9cfb1
+      internalID: 1106766997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_18
+      rect:
+        serializedVersion: 2
+        x: 3893
+        y: 3527
+        width: 148
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30d52b0f326cc464498226d343eadf85
+      internalID: -1015425388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_19
+      rect:
+        serializedVersion: 2
+        x: 1741
+        y: 3425
+        width: 228
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f6c923e7422c054c96f904da5a78ef4
+      internalID: -852798368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_20
+      rect:
+        serializedVersion: 2
+        x: 3365
+        y: 3451
+        width: 216
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb89bb4becca1fe409743202042c32f1
+      internalID: -1567378174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_21
+      rect:
+        serializedVersion: 2
+        x: 3431
+        y: 3429
+        width: 86
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47f145acdd8b8984d9dde6e27aa82dd5
+      internalID: -982872769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_22
+      rect:
+        serializedVersion: 2
+        x: 3743
+        y: 3343
+        width: 148
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a715c791ea967d499df33ab400bc484
+      internalID: -413351733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_23
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 2993
+        width: 232
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f6afea6cadecd479cfad3db24828fc
+      internalID: 1935396548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_24
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 2993
+        width: 232
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d61a938b5f58e4ba560d4deb101ca2
+      internalID: -859996968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_25
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 2975
+        width: 232
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c9cc3703c916a34db26acf930904f2b
+      internalID: -1496718876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_26
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 2975
+        width: 232
+        height: 206
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46c17519d37de4f47b39cb57dcd7ea48
+      internalID: -1939628681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_27
+      rect:
+        serializedVersion: 2
+        x: 3893
+        y: 3141
+        width: 146
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdd19f335868cd646bbf2b670dc29ad0
+      internalID: 426840644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_28
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 3007
+        width: 224
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b56c065a9f282344996cabd5cbc1c70d
+      internalID: -815143689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_29
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 3005
+        width: 224
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59abf5f7a3e448447b3bbca487dab6db
+      internalID: 1948403264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_30
+      rect:
+        serializedVersion: 2
+        x: 2545
+        y: 3037
+        width: 236
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61fa46073b81ec48aa19ec15478b743
+      internalID: 1561781845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_31
+      rect:
+        serializedVersion: 2
+        x: 3007
+        y: 2991
+        width: 122
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 354f79da451e0474f877d0f477373338
+      internalID: -1389214817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_32
+      rect:
+        serializedVersion: 2
+        x: 3385
+        y: 2991
+        width: 182
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48ba7062827ad4b4ab0e347584acad1b
+      internalID: 807900182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_33
+      rect:
+        serializedVersion: 2
+        x: 3035
+        y: 2973
+        width: 68
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3257c90a6c44ac24995cbbe78bb5b75a
+      internalID: -1978713028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_34
+      rect:
+        serializedVersion: 2
+        x: 3745
+        y: 2957
+        width: 146
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 435c411f7d5191648bada3ad7a4cc999
+      internalID: 1971550724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_35
+      rect:
+        serializedVersion: 2
+        x: 3725
+        y: 2791
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6b0a679569a5c4247b637b8e67c3fdad
+      internalID: 1297233861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_36
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 2583
+        width: 232
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e70d7bfae06ada449d8a0251fd8bb61
+      internalID: -1147583577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_37
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 2583
+        width: 232
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5333b2843ef9fa44280aac6768d62887
+      internalID: -214652786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_38
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 2645
+        width: 224
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6528d6f24af47498f8f246caf7777f
+      internalID: -246454757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_39
+      rect:
+        serializedVersion: 2
+        x: 1323
+        y: 2649
+        width: 224
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6110517169dbd14e90c022bc756e39b
+      internalID: -2145137299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_40
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 2581
+        width: 232
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8004c6d5384a5eb4181ad728473b09ab
+      internalID: 424030562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_41
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 2591
+        width: 232
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65f3c267d864504b92db812dc2c0f35
+      internalID: -1018708182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_42
+      rect:
+        serializedVersion: 2
+        x: 2543
+        y: 2601
+        width: 236
+        height: 112
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98d8dcf525d9d624890417afe9b45c6d
+      internalID: 539412377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_43
+      rect:
+        serializedVersion: 2
+        x: 3031
+        y: 2617
+        width: 72
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdacfdeba7b34d04283afa9fe3b9fc8e
+      internalID: 2141279737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_44
+      rect:
+        serializedVersion: 2
+        x: 3359
+        y: 2637
+        width: 246
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5b31a0c61b2454888a7c6b03de39e0
+      internalID: 650862914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_45
+      rect:
+        serializedVersion: 2
+        x: 3901
+        y: 2687
+        width: 146
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16bb89948bf7c8646b3acc19553e95c0
+      internalID: -1770730898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_46
+      rect:
+        serializedVersion: 2
+        x: 3739
+        y: 2501
+        width: 144
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0a9fcb28a295464da65bf9ef5730688
+      internalID: 1533633692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_47
+      rect:
+        serializedVersion: 2
+        x: 3725
+        y: 2381
+        width: 6
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2f0b65c593675048ac72195283f1377
+      internalID: -576754468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_48
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 2173
+        width: 232
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3732d4429cc862040ae3825d4ad3b35b
+      internalID: -535083830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_49
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 2173
+        width: 232
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83671d333da055b49984634c2ad8b5bc
+      internalID: 2049242684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_50
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 2155
+        width: 232
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b3e110478730f449317c2b48433d68
+      internalID: 1230112171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_51
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 2155
+        width: 232
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8afe81ebccdc6814eb901f575ea6f72a
+      internalID: 1734703527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_52
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 2171
+        width: 232
+        height: 192
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6caf74e64e1bc846a57a60dc65766ed
+      internalID: 493962194
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_53
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 2181
+        width: 232
+        height: 182
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f70e19662b72de84898abba8f82c0173
+      internalID: 1154975838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_54
+      rect:
+        serializedVersion: 2
+        x: 2535
+        y: 2193
+        width: 254
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f37b948dab6f93e4d9eb436b00219a96
+      internalID: -1485218744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_55
+      rect:
+        serializedVersion: 2
+        x: 2995
+        y: 2227
+        width: 152
+        height: 58
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31146114ce1b3df40a701c95ad5890af
+      internalID: -1673559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_56
+      rect:
+        serializedVersion: 2
+        x: 3375
+        y: 2231
+        width: 222
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3732923a65d6d34eb93a279100f1adc
+      internalID: -1579379121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_57
+      rect:
+        serializedVersion: 2
+        x: 3921
+        y: 2267
+        width: 136
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada41366049b007469fd9de8b44d0b36
+      internalID: 432282311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_58
+      rect:
+        serializedVersion: 2
+        x: 4056
+        y: 2278
+        width: 4
+        height: 4
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3fe580e55033354fb5f16ef7235c029
+      internalID: 1396296531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_59
+      rect:
+        serializedVersion: 2
+        x: 3729
+        y: 2083
+        width: 134
+        height: 71
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50dc964a04239f44b85e9dcfee5dd857
+      internalID: 1507999520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_60
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1763
+        width: 232
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581e548ef91826d4aa48a86cc4569155
+      internalID: 835749552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_61
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1763
+        width: 232
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f28a071c74e3e4eb166caad65ef3c7
+      internalID: -317911602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_62
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 1733
+        width: 232
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c7bac3b61e7ba94bb255b66b70cae66
+      internalID: -2022864971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_63
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 1877
+        width: 191
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8a7ebdc59eb03459c562da2edaca60
+      internalID: 210301646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_64
+      rect:
+        serializedVersion: 2
+        x: 1321
+        y: 1733
+        width: 232
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbe55e6375b40554988eabfbec530f4d
+      internalID: -1250822448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_65
+      rect:
+        serializedVersion: 2
+        x: 1723
+        y: 1745
+        width: 232
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07dfc70c6bc6635419dd70e1bfa5a965
+      internalID: -1689400024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_66
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 1793
+        width: 232
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671610e316524194595c6964f5cea2dc
+      internalID: -420546031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_67
+      rect:
+        serializedVersion: 2
+        x: 2561
+        y: 1797
+        width: 208
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3fad83b2a72d4949acff69dacb4667b
+      internalID: 1964538030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_68
+      rect:
+        serializedVersion: 2
+        x: 2995
+        y: 1793
+        width: 156
+        height: 102
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe5b3b485691e347849804b1307f969
+      internalID: -909334177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_69
+      rect:
+        serializedVersion: 2
+        x: 3397
+        y: 1789
+        width: 178
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cfbcebf5d25e843b4eb5dc230a7306
+      internalID: 1632610904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_70
+      rect:
+        serializedVersion: 2
+        x: 3891
+        y: 1883
+        width: 148
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af54553826a6d84892c028889e33431
+      internalID: 1242994368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_71
+      rect:
+        serializedVersion: 2
+        x: 3743
+        y: 1699
+        width: 148
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91abc190fe21e1746835eaf90d17fd6c
+      internalID: 1643167620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_72
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1355
+        width: 232
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c372abcac0b1b2a44ad269dc2d0ec23c
+      internalID: 1639194758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_73
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 1355
+        width: 232
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30648aa630f10d242baf39116471b314
+      internalID: 396790504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_74
+      rect:
+        serializedVersion: 2
+        x: 907
+        y: 1335
+        width: 232
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ff54452d8f5d0f4291e17a2585d0726
+      internalID: -2128631676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_75
+      rect:
+        serializedVersion: 2
+        x: 1319
+        y: 1379
+        width: 232
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08a63f258de51f4797ffe44d278361c
+      internalID: -209393560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_76
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 1325
+        width: 232
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86bbbfad8f3f3ff45a05106cc1ba9326
+      internalID: -1728772659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_77
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 1325
+        width: 232
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: add9d6a5ca0e44f4fb32eb565234ee43
+      internalID: 754313184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_78
+      rect:
+        serializedVersion: 2
+        x: 2536
+        y: 1412
+        width: 229
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da2d572844e13547875e0c52fd80f93
+      internalID: 985236481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_79
+      rect:
+        serializedVersion: 2
+        x: 3009
+        y: 1333
+        width: 128
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4cdc71ef516bedb40a501790f4834054
+      internalID: -1658062298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_80
+      rect:
+        serializedVersion: 2
+        x: 3893
+        y: 1479
+        width: 158
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ace73471ef3887a48883fe7ab1298c3b
+      internalID: -83934417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_81
+      rect:
+        serializedVersion: 2
+        x: 3401
+        y: 1371
+        width: 164
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c494238984072224ab4755e6ee020cf5
+      internalID: -1146771512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_82
+      rect:
+        serializedVersion: 2
+        x: 3733
+        y: 1291
+        width: 158
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bfcf5ec035d86541b26fdd2fade4fc8
+      internalID: 384377379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_83
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 945
+        width: 232
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d85e5fa3b9a04c4ab048205130c94d4
+      internalID: 1647240898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_84
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 945
+        width: 232
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4a924a282d566f4897819a5221f3fdf
+      internalID: -354353820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_85
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 915
+        width: 232
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 073c9e8d21130814683bf69a7bd05392
+      internalID: -1103770821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_86
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 915
+        width: 232
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c07d79f1d7b359c41a5370e14372ab08
+      internalID: -1297256472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_87
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 955
+        width: 180
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4ea6ef1216b9e44d81a360e0a1e7da7
+      internalID: -522219132
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_88
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 977
+        width: 178
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b45c63574a748b645aad7a06e89e09af
+      internalID: -40493876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_89
+      rect:
+        serializedVersion: 2
+        x: 3367
+        y: 1001
+        width: 234
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed91f9bcfb3a37c42a1c02b5e0bd76cb
+      internalID: 108920149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_90
+      rect:
+        serializedVersion: 2
+        x: 3893
+        y: 1057
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d78bbe10fd0fd442b69e0c1ec489ef3
+      internalID: -247636003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_91
+      rect:
+        serializedVersion: 2
+        x: 911
+        y: 969
+        width: 228
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01684db06dcb13743aa4d877716374a6
+      internalID: 2141895326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_92
+      rect:
+        serializedVersion: 2
+        x: 1315
+        y: 969
+        width: 232
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0c78712da6b994a894dc3fc4358b9f
+      internalID: -885748494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_93
+      rect:
+        serializedVersion: 2
+        x: 3437
+        y: 969
+        width: 104
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0449c1ffb6b4bfe4ab6ff597b567e928
+      internalID: -1501692214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_94
+      rect:
+        serializedVersion: 2
+        x: 3735
+        y: 877
+        width: 156
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 798238020b4a4c342b954279f0156986
+      internalID: 1548110726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_95
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 535
+        width: 232
+        height: 169
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0791f4624976f6a46bceda6057327e9c
+      internalID: 1379092623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_96
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 535
+        width: 232
+        height: 170
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 820080a20d6193d4dac766ff18dd3f65
+      internalID: 155220048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_97
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 517
+        width: 232
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136490d004e4f37429b3ebb0a4b9d4b8
+      internalID: -945529403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_98
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 517
+        width: 232
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575c4117e78d57a438fed7b94da133c3
+      internalID: -1044637420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_99
+      rect:
+        serializedVersion: 2
+        x: 2957
+        y: 559
+        width: 38
+        height: 146
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb2aa4a1c8bade74394997f38445c32a
+      internalID: 501780927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_100
+      rect:
+        serializedVersion: 2
+        x: 3151
+        y: 567
+        width: 44
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31fb9247f8a6248448ed62799c0ad9f0
+      internalID: -1219541083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_101
+      rect:
+        serializedVersion: 2
+        x: 3893
+        y: 683
+        width: 146
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c71f80223cabf2844b708d0cad8b1ef8
+      internalID: -385477807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_102
+      rect:
+        serializedVersion: 2
+        x: 935
+        y: 563
+        width: 204
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87ad877053a68804bbe082949ef16a4a
+      internalID: -1048914397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_103
+      rect:
+        serializedVersion: 2
+        x: 1317
+        y: 559
+        width: 230
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 007937fb91fec684e8e2cbb0d6e498f4
+      internalID: 1507546658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_104
+      rect:
+        serializedVersion: 2
+        x: 2563
+        y: 571
+        width: 196
+        height: 104
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7a29d997c42fd4391730d34c459ceb
+      internalID: 1418196783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_105
+      rect:
+        serializedVersion: 2
+        x: 2997
+        y: 589
+        width: 148
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bad5073dc2223549bb372489398a1d8
+      internalID: 1550490380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_106
+      rect:
+        serializedVersion: 2
+        x: 3397
+        y: 579
+        width: 58
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4457090cbb5ce5346a31d851e330491f
+      internalID: -1782834721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_107
+      rect:
+        serializedVersion: 2
+        x: 3449
+        y: 557
+        width: 128
+        height: 120
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5df5cb2aae142854cab39d818d9c504e
+      internalID: 1021949807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_108
+      rect:
+        serializedVersion: 2
+        x: 3743
+        y: 469
+        width: 148
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0260a9dc406b1db4fb6feee16dbb2864
+      internalID: -1171073351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_109
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 151
+        width: 232
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b680e0b094655c146bb8d58d384c7b2d
+      internalID: 1101052283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_110
+      rect:
+        serializedVersion: 2
+        x: 501
+        y: 151
+        width: 234
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd11b14c6f341c941812ab0837e0db2d
+      internalID: -698194925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_111
+      rect:
+        serializedVersion: 2
+        x: 1725
+        y: 107
+        width: 232
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b8b90f05598d041a9d99f51f6fdc1f
+      internalID: -400346311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_112
+      rect:
+        serializedVersion: 2
+        x: 2139
+        y: 107
+        width: 232
+        height: 208
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5a1610026adc5f469830e50e927002a
+      internalID: 1737661981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_113
+      rect:
+        serializedVersion: 2
+        x: 2957
+        y: 189
+        width: 230
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22684977950effa468224386807f4d3a
+      internalID: -1389914363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_114
+      rect:
+        serializedVersion: 2
+        x: 3179
+        y: 253
+        width: 38
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01a44fcda264884aa7c5488d894cb3e
+      internalID: -1400508488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_115
+      rect:
+        serializedVersion: 2
+        x: 3893
+        y: 245
+        width: 144
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28b0d5291a480e34189027259d0a147a
+      internalID: 1035968319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_116
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 155
+        width: 234
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b438fb8e31fbe2d4dad4e8546c36ccc2
+      internalID: -568686773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_117
+      rect:
+        serializedVersion: 2
+        x: 1307
+        y: 153
+        width: 242
+        height: 92
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5c712c3d900a7942b335765f8013fda
+      internalID: 8337697
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_118
+      rect:
+        serializedVersion: 2
+        x: 2559
+        y: 171
+        width: 230
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebbfb6e8be5219d49a00d47502796a13
+      internalID: -30907424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_119
+      rect:
+        serializedVersion: 2
+        x: 3373
+        y: 187
+        width: 150
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f05c4192d725466478f874793b44b5a8
+      internalID: 829982238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_120
+      rect:
+        serializedVersion: 2
+        x: 3106
+        y: 160
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6aaaf4a2511cc15449266d865ea5bbef
+      internalID: -581431734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Boy01_FacialAnimMap_121
+      rect:
+        serializedVersion: 2
+        x: 3745
+        y: 61
+        width: 146
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a750c97ede3d6498a3394ce6c6e407
+      internalID: 470867039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: bab097e48b1dd8b47ae084cd8be6784e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Boy01_FacialAnimMap_0: -1359588525
+      Boy01_FacialAnimMap_1: 1477585321
+      Boy01_FacialAnimMap_10: 1316542906
+      Boy01_FacialAnimMap_100: -1219541083
+      Boy01_FacialAnimMap_101: -385477807
+      Boy01_FacialAnimMap_102: -1048914397
+      Boy01_FacialAnimMap_103: 1507546658
+      Boy01_FacialAnimMap_104: 1418196783
+      Boy01_FacialAnimMap_105: 1550490380
+      Boy01_FacialAnimMap_106: -1782834721
+      Boy01_FacialAnimMap_107: 1021949807
+      Boy01_FacialAnimMap_108: -1171073351
+      Boy01_FacialAnimMap_109: 1101052283
+      Boy01_FacialAnimMap_11: -1860138494
+      Boy01_FacialAnimMap_110: -698194925
+      Boy01_FacialAnimMap_111: -400346311
+      Boy01_FacialAnimMap_112: 1737661981
+      Boy01_FacialAnimMap_113: -1389914363
+      Boy01_FacialAnimMap_114: -1400508488
+      Boy01_FacialAnimMap_115: 1035968319
+      Boy01_FacialAnimMap_116: -568686773
+      Boy01_FacialAnimMap_117: 8337697
+      Boy01_FacialAnimMap_118: -30907424
+      Boy01_FacialAnimMap_119: 829982238
+      Boy01_FacialAnimMap_12: 936806861
+      Boy01_FacialAnimMap_120: -581431734
+      Boy01_FacialAnimMap_121: 470867039
+      Boy01_FacialAnimMap_13: -119217690
+      Boy01_FacialAnimMap_14: -1440972393
+      Boy01_FacialAnimMap_15: -1126528654
+      Boy01_FacialAnimMap_16: -1037241656
+      Boy01_FacialAnimMap_17: 1106766997
+      Boy01_FacialAnimMap_18: -1015425388
+      Boy01_FacialAnimMap_19: -852798368
+      Boy01_FacialAnimMap_2: -1632394824
+      Boy01_FacialAnimMap_20: -1567378174
+      Boy01_FacialAnimMap_21: -982872769
+      Boy01_FacialAnimMap_22: -413351733
+      Boy01_FacialAnimMap_23: 1935396548
+      Boy01_FacialAnimMap_24: -859996968
+      Boy01_FacialAnimMap_25: -1496718876
+      Boy01_FacialAnimMap_26: -1939628681
+      Boy01_FacialAnimMap_27: 426840644
+      Boy01_FacialAnimMap_28: -815143689
+      Boy01_FacialAnimMap_29: 1948403264
+      Boy01_FacialAnimMap_3: 841442298
+      Boy01_FacialAnimMap_30: 1561781845
+      Boy01_FacialAnimMap_31: -1389214817
+      Boy01_FacialAnimMap_32: 807900182
+      Boy01_FacialAnimMap_33: -1978713028
+      Boy01_FacialAnimMap_34: 1971550724
+      Boy01_FacialAnimMap_35: 1297233861
+      Boy01_FacialAnimMap_36: -1147583577
+      Boy01_FacialAnimMap_37: -214652786
+      Boy01_FacialAnimMap_38: -246454757
+      Boy01_FacialAnimMap_39: -2145137299
+      Boy01_FacialAnimMap_4: -648319801
+      Boy01_FacialAnimMap_40: 424030562
+      Boy01_FacialAnimMap_41: -1018708182
+      Boy01_FacialAnimMap_42: 539412377
+      Boy01_FacialAnimMap_43: 2141279737
+      Boy01_FacialAnimMap_44: 650862914
+      Boy01_FacialAnimMap_45: -1770730898
+      Boy01_FacialAnimMap_46: 1533633692
+      Boy01_FacialAnimMap_47: -576754468
+      Boy01_FacialAnimMap_48: -535083830
+      Boy01_FacialAnimMap_49: 2049242684
+      Boy01_FacialAnimMap_5: -1978515203
+      Boy01_FacialAnimMap_50: 1230112171
+      Boy01_FacialAnimMap_51: 1734703527
+      Boy01_FacialAnimMap_52: 493962194
+      Boy01_FacialAnimMap_53: 1154975838
+      Boy01_FacialAnimMap_54: -1485218744
+      Boy01_FacialAnimMap_55: -1673559
+      Boy01_FacialAnimMap_56: -1579379121
+      Boy01_FacialAnimMap_57: 432282311
+      Boy01_FacialAnimMap_58: 1396296531
+      Boy01_FacialAnimMap_59: 1507999520
+      Boy01_FacialAnimMap_6: -604394204
+      Boy01_FacialAnimMap_60: 835749552
+      Boy01_FacialAnimMap_61: -317911602
+      Boy01_FacialAnimMap_62: -2022864971
+      Boy01_FacialAnimMap_63: 210301646
+      Boy01_FacialAnimMap_64: -1250822448
+      Boy01_FacialAnimMap_65: -1689400024
+      Boy01_FacialAnimMap_66: -420546031
+      Boy01_FacialAnimMap_67: 1964538030
+      Boy01_FacialAnimMap_68: -909334177
+      Boy01_FacialAnimMap_69: 1632610904
+      Boy01_FacialAnimMap_7: -1633439851
+      Boy01_FacialAnimMap_70: 1242994368
+      Boy01_FacialAnimMap_71: 1643167620
+      Boy01_FacialAnimMap_72: 1639194758
+      Boy01_FacialAnimMap_73: 396790504
+      Boy01_FacialAnimMap_74: -2128631676
+      Boy01_FacialAnimMap_75: -209393560
+      Boy01_FacialAnimMap_76: -1728772659
+      Boy01_FacialAnimMap_77: 754313184
+      Boy01_FacialAnimMap_78: 985236481
+      Boy01_FacialAnimMap_79: -1658062298
+      Boy01_FacialAnimMap_8: -1290446302
+      Boy01_FacialAnimMap_80: -83934417
+      Boy01_FacialAnimMap_81: -1146771512
+      Boy01_FacialAnimMap_82: 384377379
+      Boy01_FacialAnimMap_83: 1647240898
+      Boy01_FacialAnimMap_84: -354353820
+      Boy01_FacialAnimMap_85: -1103770821
+      Boy01_FacialAnimMap_86: -1297256472
+      Boy01_FacialAnimMap_87: -522219132
+      Boy01_FacialAnimMap_88: -40493876
+      Boy01_FacialAnimMap_89: 108920149
+      Boy01_FacialAnimMap_9: -1777233023
+      Boy01_FacialAnimMap_90: -247636003
+      Boy01_FacialAnimMap_91: 2141895326
+      Boy01_FacialAnimMap_92: -885748494
+      Boy01_FacialAnimMap_93: -1501692214
+      Boy01_FacialAnimMap_94: 1548110726
+      Boy01_FacialAnimMap_95: 1379092623
+      Boy01_FacialAnimMap_96: 155220048
+      Boy01_FacialAnimMap_97: -945529403
+      Boy01_FacialAnimMap_98: -1044637420
+      Boy01_FacialAnimMap_99: 501780927
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
