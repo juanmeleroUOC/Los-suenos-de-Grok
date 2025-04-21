@@ -22,10 +22,10 @@ public class Checkpoint : MonoBehaviour
         {
             GameManager.instance.SetSpawnPoint(transform.position);
 
-            Checkpoint[] allCheckpoints = FindObjectsOfType<Checkpoint>();
+            Checkpoint[] allCheckpoints = Object.FindObjectsByType<Checkpoint>(FindObjectsSortMode.None);
             for (int i = 0; i < allCheckpoints.Length; i++)
             {
-                allCheckpoints[i].cpOff.SetActive(true); 
+                allCheckpoints[i].cpOff.SetActive(true);
                 allCheckpoints[i].cpOn.SetActive(false);
             }
 
