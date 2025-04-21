@@ -41,6 +41,15 @@ public class PlayerMovement : MonoBehaviour
 
     public static PlayerMovement instance;
 
+
+    //para el knockback cuando se hace daño
+    public bool isKnocking;
+    public float knockbackLength = .5f;
+    private float knockbackCounter;
+    public Vector2 knockbackPower;
+
+    public GameObject[] playerPieces;
+
     //para poder acceder a las propiedades del script desde otro
     private void Awake()
     {
@@ -59,140 +68,156 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float horizontal = Input.GetAxis("Horizontal");
-        float vertical = Input.GetAxis("Vertical");
-
-        Vector3 movementDirection = new Vector3(horizontal, 0, vertical);
-
-        float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
-
-        if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+        if(!isKnocking)
         {
-            inputMagnitude /= 2;
-        }
-        animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
+            float horizontal = Input.GetAxis("Horizontal");
+            float vertical = Input.GetAxis("Vertical");
 
-        movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection; //se mueve acorde a la cámara
-        movementDirection.Normalize(); //evitar que se mueva más rápido en diagonal
+            Vector3 movementDirection = new Vector3(horizontal, 0, vertical);
 
-        ySpeed += Physics.gravity.y * Time.deltaTime;
+            float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
 
-        SetSlopeSlideVelocity();
-
-        if(slopeSlideVelocity == Vector3.zero) 
-        {
-            isSliding = false;
-        }
-
-        if (characterController.isGrounded)
-        {
-            timeInAir = 0f;
-            lastGroundedTime = Time.time;
-        }
-        else
-        {
-            timeInAir += Time.deltaTime;
-        }
-
-
-        if (Input.GetButtonDown("Jump"))
-        {
-            jumpButtonPressedTime = Time.time;
-        }
-
-        if (Time.time - lastGroundedTime <= jumpButtonGracePeriod) // Está en el suelo
-        {
-
-            if (slopeSlideVelocity != Vector3.zero) //Se está deslizando 
+            if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
             {
-                isSliding = true;
+                inputMagnitude /= 2;
+            }
+            animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
+
+            movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection; //se mueve acorde a la cámara
+            movementDirection.Normalize(); //evitar que se mueva más rápido en diagonal
+
+            ySpeed += Physics.gravity.y * Time.deltaTime;
+
+            SetSlopeSlideVelocity();
+
+            if (slopeSlideVelocity == Vector3.zero)
+            {
+                isSliding = false;
             }
 
-            characterController.stepOffset = originalStepOffset;
-
-            if (!isSliding)
+            if (characterController.isGrounded)
             {
-                ySpeed = -0.5f;
+                timeInAir = 0f;
+                lastGroundedTime = Time.time;
+            }
+            else
+            {
+                timeInAir += Time.deltaTime;
             }
 
-            animator.SetBool("IsGrounded", true);
-            isGrounded = true;
-            //animator.SetBool("IsJumping", false);
-            isJumping = false;
-            animator.SetBool("IsFalling", false);
-           
-            
-            hasDoubleJumped = false; 
-           
-            if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod && !isSliding)  //comprobar condiciones para hacer saltar o no
-            {
-                ySpeed = jumpSpeed;
-                // animator.SetBool("IsJumping", true);
-                animator.SetTrigger("JumpTrigger");
-                isJumping = true;
-                jumpButtonPressedTime = null;
-                lastGroundedTime = null;
 
+            if (Input.GetButtonDown("Jump"))
+            {
+                jumpButtonPressedTime = Time.time;
             }
-        } 
-        else
-        {
-            characterController.stepOffset = 0;
-            animator.SetBool("IsGrounded", false);
-            isGrounded = false;
 
-            if ((isJumping && ySpeed <0)  || ySpeed < -2) //si está cayendo por salto o cambio de superficie
+            if (Time.time - lastGroundedTime <= jumpButtonGracePeriod) // Está en el suelo
             {
-                if(timeInAir >= minAirTimeForSlide || isJumping)
+
+                if (slopeSlideVelocity != Vector3.zero) //Se está deslizando 
                 {
-                    animator.SetBool("IsFalling", true);
+                    isSliding = true;
+                }
+
+                characterController.stepOffset = originalStepOffset;
+
+                if (!isSliding)
+                {
+                    ySpeed = -0.5f;
+                }
+
+                animator.SetBool("IsGrounded", true);
+                isGrounded = true;
+                //animator.SetBool("IsJumping", false);
+                isJumping = false;
+                animator.SetBool("IsFalling", false);
+
+
+                hasDoubleJumped = false;
+
+                if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod && !isSliding)  //comprobar condiciones para hacer saltar o no
+                {
+                    ySpeed = jumpSpeed;
+                    // animator.SetBool("IsJumping", true);
+                    animator.SetTrigger("JumpTrigger");
+                    isJumping = true;
+                    jumpButtonPressedTime = null;
+                    lastGroundedTime = null;
+
+                }
+            }
+            else
+            {
+                characterController.stepOffset = 0;
+                animator.SetBool("IsGrounded", false);
+                isGrounded = false;
+
+                if ((isJumping && ySpeed < 0) || ySpeed < -2) //si está cayendo por salto o cambio de superficie
+                {
+                    if (timeInAir >= minAirTimeForSlide || isJumping)
+                    {
+                        animator.SetBool("IsFalling", true);
+                    }
+                }
+
+
+                if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod && !hasDoubleJumped) //doble salto
+                {
+                    ySpeed = jumpSpeed * doubleJumpMultiplier;
+                    // animator.SetBool("IsJumping", true);
+                    animator.SetFloat("JumpSpeedMultiplier", 0.3f); // solo afecta a la animación Jumping
+                    animator.Play("Jumping", 0, 0.05f); // reinicia desde un poco adelante
+                    Invoke(nameof(ResetAnimatorSpeed), 0.3f); //  restaurar velocidad normal
+
+                    isJumping = true;
+                    hasDoubleJumped = true;
+                    jumpButtonPressedTime = null;
                 }
             }
 
 
-            if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod && !hasDoubleJumped) //doble salto
-            {
-                ySpeed = jumpSpeed * doubleJumpMultiplier;
-                // animator.SetBool("IsJumping", true);
-                animator.SetFloat("JumpSpeedMultiplier", 0.3f); // solo afecta a la animación Jumping
-                animator.Play("Jumping", 0, 0.05f); // reinicia desde un poco adelante
-                Invoke(nameof(ResetAnimatorSpeed), 0.3f); //  restaurar velocidad normal
 
-                isJumping = true;
-                hasDoubleJumped = true;
-                jumpButtonPressedTime = null;
+
+
+            if (movementDirection != Vector3.zero) //se está moviendo
+            {
+                animator.SetBool("IsMoving", true);
+                Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed);
+            }
+            else
+            {
+                animator.SetBool("IsMoving", false);
+            }
+
+            if (!isGrounded && !isSliding)
+            {
+                Vector3 velocity = movementDirection * inputMagnitude * JumpHorizontalSpeed;
+                velocity.y = ySpeed;
+
+                characterController.Move(velocity * Time.deltaTime);
+            }
+
+            if (isSliding)
+            {
+                Vector3 velocity = slopeSlideVelocity;
+                velocity.y = ySpeed;
+
+                characterController.Move(velocity * Time.deltaTime);
             }
         }
 
-       
-      
-
-
-        if (movementDirection != Vector3.zero) //se está moviendo
+        if (isKnocking)
         {
-            animator.SetBool("IsMoving", true);
-            Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
-            transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed);
-        }
-        else
-        {
-            animator.SetBool("IsMoving", false);
-        }
+            knockbackCounter -= Time.deltaTime;
 
-        if (!isGrounded && !isSliding)
-        {
-            Vector3 velocity = movementDirection * inputMagnitude * JumpHorizontalSpeed;
-            velocity.y =ySpeed;
+            Vector3 knockDirection = -transform.forward * knockbackPower.x + Vector3.up * knockbackPower.y;
+            characterController.Move(knockDirection * Time.deltaTime);
 
-            characterController.Move(velocity * Time.deltaTime);    
-        }
-
-        if (isSliding)
-        {
-            Vector3 velocity = slopeSlideVelocity;
-            velocity.y =ySpeed;
-
-            characterController.Move(velocity * Time.deltaTime);
+            if (knockbackCounter <= 0)
+            {
+                isKnocking = false;
+            }
         }
     }
 
@@ -235,6 +260,14 @@ public class PlayerMovement : MonoBehaviour
     private void ResetAnimatorSpeed()
     {
         animator.SetFloat("JumpSpeedMultiplier", 1f);
+    }
+
+
+    public void Knockback()
+    {
+        isKnocking = true;
+        knockbackCounter = knockbackLength;
+        Debug.Log("Knocked back");
     }
 }
 
