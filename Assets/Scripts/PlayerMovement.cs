@@ -39,6 +39,13 @@ public class PlayerMovement : MonoBehaviour
 
     private bool hasDoubleJumped = false;
 
+    public static PlayerMovement instance;
+
+    //para poder acceder a las propiedades del script desde otro
+    private void Awake()
+    {
+        instance = this;
+    }
 
     private void Start()
     {
@@ -225,20 +232,6 @@ public class PlayerMovement : MonoBehaviour
         }
        
     }
-
-    private void OnApplicationFocus(bool focus)
-    {
-        if (focus)
-        {
-            Cursor.lockState = CursorLockMode.Locked; //centrar el cursor en el centro de la pantalla
-        } else
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
-    }
-
-
-
     private void ResetAnimatorSpeed()
     {
         animator.SetFloat("JumpSpeedMultiplier", 1f);

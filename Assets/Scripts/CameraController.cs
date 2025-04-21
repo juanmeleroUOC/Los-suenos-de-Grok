@@ -1,11 +1,17 @@
 using UnityEngine;
-using UnityEngine.SceneManagement;
+using Unity.Cinemachine;
 
-public class LevelLoader : MonoBehaviour
+public class CameraController : MonoBehaviour
 {
 
-    public int levelToChange;
+    public static CameraController instance;
 
+    public CinemachineBrain cmBrain;
+
+    private void Awake()
+    {
+        instance = this;
+    }
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,7 +21,6 @@ public class LevelLoader : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //si jugador llega a x sitio entonces cambiar de nivel
-        SceneManager.LoadScene(levelToChange);
+        
     }
 }
