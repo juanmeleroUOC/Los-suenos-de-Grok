@@ -20,6 +20,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField]
     private float doubleJumpMultiplier = 0.7f;
 
+
     private CharacterController characterController;
     private float ySpeed;
     private float originalStepOffset;
@@ -86,7 +87,7 @@ public class PlayerMovement : MonoBehaviour
             movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection; //se mueve acorde a la cámara
             movementDirection.Normalize(); //evitar que se mueva más rápido en diagonal
 
-            ySpeed += Physics.gravity.y * Time.deltaTime;
+            ySpeed += Physics.gravity.y * 1.65f * Time.deltaTime;
 
             SetSlopeSlideVelocity();
 

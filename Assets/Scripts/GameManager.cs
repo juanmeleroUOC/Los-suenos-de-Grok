@@ -9,8 +9,6 @@ public class GameManager : MonoBehaviour
     public UnityEvent GamePaused;
     public UnityEvent GameResumed;
 
-    private bool _isPaused;
-
     public static GameManager instance;
 
     private Vector3 respawnPosition;
@@ -23,46 +21,25 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
-      respawnPosition = PlayerMovement.instance.transform.position;
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
+        respawnPosition = PlayerMovement.instance.transform.position;
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        //Pausar
         if (Input.GetKeyDown(KeyCode.Escape))
         {
-            _isPaused = !_isPaused;
-
-            if (_isPaused)
-            {
-                Time.timeScale = 0;
-                GamePaused.Invoke();
-            }
-            else
-            {
-                Time.timeScale = 1;
-                GameResumed.Invoke();
-            }
+            PauseUnpause();
         }
     }
 
-    private void OnApplicationFocus(bool focus)
-    {
-        if (focus)
-        {
-            Cursor.lockState = CursorLockMode.Locked; //centrar el cursor en el centro de la pantalla
-        }
-        else
-        {
-            Cursor.lockState = CursorLockMode.None;
-        }
-    }
 
     public void Respawn()
     {
         StartCoroutine(RespawnCoroutine());
+        HealthManager.instance.PlayerKilled();
     }
 
     // corutina para el respawn y gestión de animación del fade 
@@ -91,5 +68,28 @@ public class GameManager : MonoBehaviour
     public void SetSpawnPoint(Vector3 newSpawnPoint)
     {
         respawnPosition = newSpawnPoint;
+    }
+
+    public void PauseUnpause()
+    {
+        if (UIManager.instance.pauseScreen.activeInHierarchy)
+        {
+            UIManager.instance.pauseScreen.SetActive(false);
+            Time.timeScale = 1f;
+
+            Cursor.visible = false;
+            Cursor.lockState = CursorLockMode.Locked;
+        } else
+        { //Estamos en pantalla pausa
+            UIManager.instance.pauseScreen.SetActive(true);
+
+            UIManager.instance.CloseOptions();
+
+            Time.timeScale = 0f;
+
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+        }
+
     }
 }
