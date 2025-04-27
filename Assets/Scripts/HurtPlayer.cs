@@ -14,11 +14,12 @@ public class HurtPlayer : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider other)
+       private void OnTriggerEnter(Collider other)
     {
         if(other.tag == "Player")
         {
-            HealthManager.instance.Hurt();
+            // Llamamos al método Hurt() de HealthManager
+            HealthManager.instance.Hurt(other.transform);
         }
     }
 }

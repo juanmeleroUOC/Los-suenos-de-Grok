@@ -48,6 +48,7 @@ public class PlayerMovement : MonoBehaviour
     public float knockbackLength = .5f;
     private float knockbackCounter;
     public Vector2 knockbackPower;
+    private Vector3 knockbackDirection;
 
     public GameObject[] playerPieces;
 
@@ -212,9 +213,17 @@ public class PlayerMovement : MonoBehaviour
         {
             knockbackCounter -= Time.deltaTime;
 
-            Vector3 knockDirection = -transform.forward * knockbackPower.x + Vector3.up * knockbackPower.y;
-            characterController.Move(knockDirection * Time.deltaTime);
+            if (knockbackDirection != Vector3.zero)
+            {
+                characterController.Move(knockbackDirection * Time.deltaTime * knockbackPower.x); 
+            }
+            else
+            {
+                Vector3 defaultKnockbackDirection = -transform.forward * knockbackPower.x + Vector3.up * knockbackPower.y;
+                characterController.Move(defaultKnockbackDirection * Time.deltaTime * knockbackPower.x); 
+            }
 
+            // Desactivamos el knockback después de que haya pasado el tiempo
             if (knockbackCounter <= 0)
             {
                 isKnocking = false;
@@ -264,11 +273,17 @@ public class PlayerMovement : MonoBehaviour
     }
 
 
-    public void Knockback()
+    public void Knockback(Vector3 direction)
     {
+        // Almacenar la dirección de knockback
+        knockbackDirection = direction;
+
+        // Resetear el contador de knockback
         isKnocking = true;
         knockbackCounter = knockbackLength;
-        Debug.Log("Knocked back");
+
+        Debug.Log("Knocked back in direction: " + knockbackDirection);
     }
+
 }
 

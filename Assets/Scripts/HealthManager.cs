@@ -49,7 +49,7 @@ public class HealthManager : MonoBehaviour
         }
     }
 
-    public void Hurt()
+    public void Hurt(Transform playerTransform)
     {
         if (invincCounter <= 0)
         {
@@ -61,13 +61,19 @@ public class HealthManager : MonoBehaviour
             }
             else
             {
-                PlayerMovement.instance.Knockback();
-                invincCounter = invincibleLength;
+                // Calcular la dirección del knockback
+                Vector3 knockbackDirection = playerTransform.position - transform.position;
+                knockbackDirection.Normalize(); // Normalizamos la dirección
 
+                // Llamar al método Knockback de PlayerMovement
+                PlayerMovement.instance.Knockback(knockbackDirection);
+
+                invincCounter = invincibleLength;
             }
         }
         UpdateUI();
     }
+
 
     public void ResetHealth()
     {
