@@ -55,7 +55,8 @@ public class PlayerMovement : MonoBehaviour
 
     public float bounceForce = 8f;
 
-    //para poder acceder a las propiedades del script desde otro
+    public bool stopMove;
+
     private void Awake()
     {
         instance = this;
@@ -73,7 +74,7 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!isKnocking)
+        if(!isKnocking && !stopMove)
         {
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
@@ -230,6 +231,12 @@ public class PlayerMovement : MonoBehaviour
             {
                 isKnocking = false;
             }
+        }
+
+        if (stopMove) {
+            characterController.Move(Vector3.zero);
+            animator.SetFloat("Input Magnitude", 0f);
+            animator.SetBool("IsMoving", false);
         }
     }
 

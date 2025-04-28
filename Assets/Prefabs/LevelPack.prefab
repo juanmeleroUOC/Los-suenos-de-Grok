@@ -432,6 +432,8 @@ MonoBehaviour:
           m_BoolArgument: 1
         m_CallState: 2
   deathEffect: {fileID: 6007757283781493297, guid: 12b275b79c8f5cd4a830f057485538d3, type: 3}
+  levelEndMusic: 0
+  levelToLoad: Level1
 --- !u!114 &1158871201189544246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1422,6 +1424,8 @@ MonoBehaviour:
   - {fileID: 1134953274035050360}
   - {fileID: 108955271827899942}
   - {fileID: 7931211605760227973}
+  bounceForce: 8
+  stopMove: 0
 --- !u!143 &7747469723659751654
 CharacterController:
   m_ObjectHideFlags: 0
