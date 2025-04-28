@@ -1999,6 +1999,10 @@ PrefabInstance:
       propertyPath: 'patrolPoints.Array.data[2]'
       value: 
       objectReference: {fileID: 1375018878}
+    - target: {fileID: 5571789061548852110, guid: 87ae3e63a4090d4439db3e55e4a0ff92, type: 3}
+      propertyPath: deathEffect
+      value: 
+      objectReference: {fileID: 8103921458553629638, guid: 59eff220baa4a054e9f154f8ab3ac76a, type: 3}
     - target: {fileID: 6622529847302529301, guid: 87ae3e63a4090d4439db3e55e4a0ff92, type: 3}
       propertyPath: m_Name
       value: Kenops

@@ -8,6 +8,8 @@ public class EnemyHealthManager : MonoBehaviour
 
     public int deathSound;
 
+    public GameObject deathEffect;
+
     void Start()
     {
         currentHeatlh = maxHeatlh;
@@ -20,7 +22,11 @@ public class EnemyHealthManager : MonoBehaviour
         {
             // AudioManager.instance.PlaySFX(deathSound);
             Destroy(gameObject);
+            Instantiate(deathEffect, transform.position, transform.rotation);
+
         }
+        PlayerMovement.instance.Bounce();
+
     }
 
 }

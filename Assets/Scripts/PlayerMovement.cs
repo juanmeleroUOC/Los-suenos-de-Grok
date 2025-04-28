@@ -1,4 +1,5 @@
 using UnityEngine;
+using static UnityEditor.Searcher.SearcherWindow.Alignment;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -51,6 +52,8 @@ public class PlayerMovement : MonoBehaviour
     private Vector3 knockbackDirection;
 
     public GameObject[] playerPieces;
+
+    public float bounceForce = 8f;
 
     //para poder acceder a las propiedades del script desde otro
     private void Awake()
@@ -129,13 +132,12 @@ public class PlayerMovement : MonoBehaviour
                 }
 
                 animator.SetBool("IsGrounded", true);
-                isGrounded = true;
-                //animator.SetBool("IsJumping", false);
-                isJumping = false;
                 animator.SetBool("IsFalling", false);
-
-
+                animator.ResetTrigger("JumpTrigger");
+                isGrounded = true;
+                isJumping = false;
                 hasDoubleJumped = false;
+                //animator.SetBool("IsJumping", false);
 
                 if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod && !isSliding)  //comprobar condiciones para hacer saltar o no
                 {
@@ -283,6 +285,17 @@ public class PlayerMovement : MonoBehaviour
         knockbackCounter = knockbackLength;
 
         Debug.Log("Knocked back in direction: " + knockbackDirection);
+    }
+
+    public void Bounce()
+    {
+        ySpeed = bounceForce;
+        isJumping = true;
+        isGrounded = false;
+        animator.SetTrigger("JumpTrigger");
+        animator.SetBool("IsGrounded", false);
+        animator.SetBool("IsFalling", false);
+
     }
 
 }
