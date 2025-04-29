@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class UIManager : MonoBehaviour
 
@@ -9,26 +10,18 @@ public class UIManager : MonoBehaviour
     public Text healthText;
     public Image healthImage;
 
-    public GameObject pauseScreen, optionsScreen;
+    public GameObject pauseScreen, optionsScreen, decisionScreen;
+
 
     public Slider musicVolSlider, sfxVolSlider;
+
+    public string mainMenu, levelSelect;
 
     private void Awake()
     {
         instance = this;
     }
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+   
     public void Resume()
     {
         GameManager.instance.PauseUnpause();
@@ -45,9 +38,14 @@ public class UIManager : MonoBehaviour
 
     }
 
+    public void LevelSelect()
+    {
+        SceneManager.LoadScene(levelSelect);
+    }
+
     public void ExitMainMenu()
     {
-
+        SceneManager.LoadScene(mainMenu);
     }
 
     public void SetMusicLevel()
@@ -58,5 +56,17 @@ public class UIManager : MonoBehaviour
     public void SetSFXLevel()
     {
         AudioManager.instance.SetSFXLevel();
+    }
+
+
+    public void OpenDecisionScreen()
+    {
+        decisionScreen.SetActive(true);
+    }
+
+    public void CloseDecisionScreen()
+    {
+        decisionScreen.SetActive(false);
+
     }
 }

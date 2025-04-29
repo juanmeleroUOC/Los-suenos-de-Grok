@@ -10,8 +10,8 @@ public class LevelExit : MonoBehaviour
         if(other.tag == "Player")
         {
             animator.SetTrigger("HitLevelEnd");
-
-            StartCoroutine(GameManager.instance.LevelEndWaiter());
+            UIManager.instance.OpenDecisionScreen();
+          //  StartCoroutine(GameManager.instance.LevelEndWaiter());
         }
     }
 
