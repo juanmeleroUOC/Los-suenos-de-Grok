@@ -29,7 +29,6 @@ public class EnemyAi : MonoBehaviour
     {
         player = GameObject.Find("Player").transform;
         agent = GetComponent<NavMeshAgent>();
-
     }
 
     private void Update()
@@ -72,9 +71,7 @@ public class EnemyAi : MonoBehaviour
 
         if (!alreadyAttacked)
         {
-            //ToDo añadir aquí código de ataque: disparo o cuerpo a cuerpo
-
-            //ejemplo con disparo
+            
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();  
             rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
             rb.AddForce(transform.up * 8f, ForceMode.Impulse);

@@ -11,7 +11,7 @@ public class DecisionsUIManager : MonoBehaviour
 
     [Header("Logic")]
     public DecisionsManager manager;
-    public DecisionData decisionData; // This level's decision
+    public DecisionData decisionData; 
 
     private void Start()
     {
@@ -30,7 +30,7 @@ public class DecisionsUIManager : MonoBehaviour
             return;
         }
 
-        manager.GetAllDecisions();
+       // manager.GetAllDecisions();
         decisionText.text = decisionData.textoDecision;
         option1Button.GetComponentInChildren<TMP_Text>().text = decisionData.opcion1;
         option2Button.GetComponentInChildren<TMP_Text>().text = decisionData.opcion2;

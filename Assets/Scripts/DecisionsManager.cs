@@ -15,7 +15,6 @@ public class DecisionsManager : MonoBehaviour
             {
                 int option = PlayerPrefs.GetInt(decision.Key);
                 takenDecisions[decision.Key] = option;
-              //  Debug.Log($"Loaded saved decision: {decision.Key} -> Option {option}");
             }
         }
     }
