@@ -5,21 +5,13 @@ public class Checkpoint : MonoBehaviour
 
     public GameObject cpOn, cpOff;
 
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "Player")
+        if (other.CompareTag("Player"))
         {
+            if (GameManager.instance.activeCheckpoint == this)
+                return;
+
             GameManager.instance.SetSpawnPoint(transform.position);
 
             Checkpoint[] allCheckpoints = Object.FindObjectsByType<Checkpoint>(FindObjectsSortMode.None);
@@ -31,6 +23,8 @@ public class Checkpoint : MonoBehaviour
 
             cpOff.SetActive(false);
             cpOn.SetActive(true);
+
+            GameManager.instance.activeCheckpoint = this;
         }
     }
 }

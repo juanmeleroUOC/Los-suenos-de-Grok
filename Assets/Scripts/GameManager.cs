@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
 
     public string levelToLoad;
 
+    public Checkpoint activeCheckpoint;
+
     private void Awake()
     {
         instance = this;
