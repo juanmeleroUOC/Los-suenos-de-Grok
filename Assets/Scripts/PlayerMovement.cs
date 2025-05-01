@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
     public static PlayerMovement instance;
 
 
-    //para el knockback cuando se hace daño
+    //para el knockback cuando se hace daï¿½o
     public bool isKnocking;
     public float knockbackLength = .5f;
     private float knockbackCounter;
@@ -89,8 +89,8 @@ public class PlayerMovement : MonoBehaviour
             }
             animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
 
-            movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection; //se mueve acorde a la cámara
-            movementDirection.Normalize(); //evitar que se mueva más rápido en diagonal
+            movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection; //se mueve acorde a la cï¿½mara
+            movementDirection.Normalize(); //evitar que se mueva mï¿½s rï¿½pido en diagonal
 
             ySpeed += Physics.gravity.y * 1.65f * Time.deltaTime;
 
@@ -117,10 +117,10 @@ public class PlayerMovement : MonoBehaviour
                 jumpButtonPressedTime = Time.time;
             }
 
-            if (Time.time - lastGroundedTime <= jumpButtonGracePeriod) // Está en el suelo
+            if (Time.time - lastGroundedTime <= jumpButtonGracePeriod) // Estï¿½ en el suelo
             {
 
-                if (slopeSlideVelocity != Vector3.zero) //Se está deslizando 
+                if (slopeSlideVelocity != Vector3.zero) //Se estï¿½ deslizando 
                 {
                     isSliding = true;
                 }
@@ -157,7 +157,7 @@ public class PlayerMovement : MonoBehaviour
                 animator.SetBool("IsGrounded", false);
                 isGrounded = false;
 
-                if ((isJumping && ySpeed < 0) || ySpeed < -2) //si está cayendo por salto o cambio de superficie
+                if ((isJumping && ySpeed < 0) || ySpeed < -2) //si estï¿½ cayendo por salto o cambio de superficie
                 {
                     if (timeInAir >= minAirTimeForSlide || isJumping)
                     {
@@ -170,7 +170,7 @@ public class PlayerMovement : MonoBehaviour
                 {
                     ySpeed = jumpSpeed * doubleJumpMultiplier;
                     // animator.SetBool("IsJumping", true);
-                    animator.SetFloat("JumpSpeedMultiplier", 0.3f); // solo afecta a la animación Jumping
+                    animator.SetFloat("JumpSpeedMultiplier", 0.3f); // solo afecta a la animaciï¿½n Jumping
                     animator.Play("Jumping", 0, 0.05f); // reinicia desde un poco adelante
                     Invoke(nameof(ResetAnimatorSpeed), 0.3f); //  restaurar velocidad normal
 
@@ -184,7 +184,7 @@ public class PlayerMovement : MonoBehaviour
 
 
 
-            if (movementDirection != Vector3.zero) //se está moviendo
+            if (movementDirection != Vector3.zero) //se estï¿½ moviendo
             {
                 animator.SetBool("IsMoving", true);
                 Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
@@ -226,7 +226,7 @@ public class PlayerMovement : MonoBehaviour
                 characterController.Move(defaultKnockbackDirection * Time.deltaTime * knockbackPower.x); 
             }
 
-            // Desactivamos el knockback después de que haya pasado el tiempo
+            // Desactivamos el knockback despuï¿½s de que haya pasado el tiempo
             if (knockbackCounter <= 0)
             {
                 isKnocking = false;
@@ -253,7 +253,7 @@ public class PlayerMovement : MonoBehaviour
             }
         }
 
-        if (isSliding) //Parar gradualmente la animación
+        if (isSliding) //Parar gradualmente la animaciï¿½n
         {
             slopeSlideVelocity -= slopeSlideVelocity * Time.deltaTime * 3;
 
@@ -284,7 +284,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Knockback(Vector3 direction)
     {
-        // Almacenar la dirección de knockback
+        // Almacenar la direcciï¿½n de knockback
         knockbackDirection = direction;
 
         // Resetear el contador de knockback
@@ -304,6 +304,20 @@ public class PlayerMovement : MonoBehaviour
         animator.SetBool("IsFalling", false);
 
     }
+
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        Rigidbody body = hit.collider.attachedRigidbody;
+
+        // No empujar si no hay Rigidbody o si es kinematic
+        if (body == null || body.isKinematic)
+            return;
+
+        // Solo empujar en horizontal
+        Vector3 pushDir = new Vector3(hit.moveDirection.x, 0, hit.moveDirection.z);
+        body.linearVelocity = pushDir * 2.0f; // puedes ajustar la fuerza
+    }
+
 
 }
 
