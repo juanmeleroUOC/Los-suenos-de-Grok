@@ -11,7 +11,7 @@ public class LevelExit : MonoBehaviour
         {
             animator.SetTrigger("HitLevelEnd");
             UIManager.instance.OpenDecisionScreen();
-          //  StartCoroutine(GameManager.instance.LevelEndWaiter());
+           // StartCoroutine(GameManager.instance.LevelEndWaiter());
         }
     }
 

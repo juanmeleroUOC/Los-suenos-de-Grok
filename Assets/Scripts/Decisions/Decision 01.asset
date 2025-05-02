@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Decision 01
   m_EditorClassIdentifier: 
   decisionID: decision_01
-  textoDecision: "\xBFBeber agua?"
-  opcion1: "S\xED"
-  opcion2: No
+  textoDecision: "Vaya, es una botella de agua. \xBFQu\xE9 quieres hacer con ella?"
+  opcion1: "Tengo sed, beber\xE9."
+  opcion2: Nada, estoy bien.
