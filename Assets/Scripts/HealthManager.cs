@@ -69,6 +69,8 @@ public class HealthManager : MonoBehaviour
                 PlayerMovement.instance.Knockback(knockbackDirection);
 
                 invincCounter = invincibleLength;
+
+                //ToDo añadir sonido daño
             }
         }
         UpdateUI();
@@ -97,7 +99,7 @@ public class HealthManager : MonoBehaviour
     {
         UIManager.instance.healthText.text = currentHealth.ToString();
 
-        switch (currentHealth) //TODO de momento no funcionará porque no tengo las imágenes todavía
+        switch (currentHealth) 
         {
             case 5:
                 //   UIManager.instance.healthImage.sprite = healthBarImages[4];
@@ -106,16 +108,16 @@ public class HealthManager : MonoBehaviour
                 //     UIManager.instance.healthImage.sprite = healthBarImages[3];
                 break;
             case 3:
-                //     UIManager.instance.healthImage.sprite = healthBarImages[2];
+                  //  UIManager.instance.healthImage.sprite = healthBarImages[2];
                 break;
             case 2:
-                //     UIManager.instance.healthImage.sprite = healthBarImages[1];
+                    UIManager.instance.healthImage.sprite = healthBarImages[1];
                 break;
             case 1:
-                //      UIManager.instance.healthImage.sprite = healthBarImages[0];
+                      UIManager.instance.healthImage.sprite = healthBarImages[0];
                 break;
             case 0:
-                //       UIManager.instance.healthImage.enabled = false;
+                      UIManager.instance.healthImage.enabled = false;
                 break;
         }
     }

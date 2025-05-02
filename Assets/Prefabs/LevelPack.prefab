@@ -1499,6 +1499,7 @@ MonoBehaviour:
   deathEffect: {fileID: 6007757283781493297, guid: 12b275b79c8f5cd4a830f057485538d3, type: 3}
   levelEndMusic: 0
   levelToLoad: Level1
+  activeCheckpoint: {fileID: 0}
 --- !u!114 &1158871201189544246
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1512,9 +1513,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentHealth: 1
-  maxHealth: 5
+  maxHealth: 2
   invincibleLength: 2
-  healthBarImages: []
+  healthBarImages:
+  - {fileID: 21300000, guid: d9d90f4caabe0ae42b813fe15114b2ae, type: 3}
+  - {fileID: 21300000, guid: a35aebfa9bfd8854fa4c34e5c77982a4, type: 3}
 --- !u!114 &7550966042631964428
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4050,6 +4053,14 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0.3888889
       objectReference: {fileID: 0}
+    - target: {fileID: 728403773615954031, guid: f5bafa663789e6c49a534cbb08e59ec0, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: a35aebfa9bfd8854fa4c34e5c77982a4, type: 3}
+    - target: {fileID: 1857294692178197637, guid: f5bafa663789e6c49a534cbb08e59ec0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2917370609234442100, guid: f5bafa663789e6c49a534cbb08e59ec0, type: 3}
       propertyPath: m_FontData.m_Alignment
       value: 4
@@ -4117,6 +4128,22 @@ PrefabInstance:
     - target: {fileID: 5120763994172636405, guid: f5bafa663789e6c49a534cbb08e59ec0, type: 3}
       propertyPath: m_AnchorMin.x
       value: 0.3888889
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646953828245787241, guid: f5bafa663789e6c49a534cbb08e59ec0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 71.4696
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646953828245787241, guid: f5bafa663789e6c49a534cbb08e59ec0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 71.4696
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646953828245787241, guid: f5bafa663789e6c49a534cbb08e59ec0, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 895
+      objectReference: {fileID: 0}
+    - target: {fileID: 5646953828245787241, guid: f5bafa663789e6c49a534cbb08e59ec0, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 486
       objectReference: {fileID: 0}
     - target: {fileID: 7450749113247910438, guid: f5bafa663789e6c49a534cbb08e59ec0, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
