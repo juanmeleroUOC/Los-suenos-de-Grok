@@ -15,7 +15,6 @@ public class MainMenu : MonoBehaviour
     {
         if (PlayerPrefs.HasKey("Continue"))
         {
-            Debug.Log("HAY CONTINUE");
             EventSystem.current.SetSelectedGameObject(null);
             continueBtn.SetActive(true);
             EventSystem.current.SetSelectedGameObject(continueBtn.gameObject);
