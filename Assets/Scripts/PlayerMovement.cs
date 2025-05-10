@@ -82,16 +82,16 @@ public class PlayerMovement : MonoBehaviour
 
             float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
 
-            if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift))
+            if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.JoystickButton10)) //sprint
             {
-                inputMagnitude /= 2;
+                inputMagnitude = 2;
             }
             animator.SetFloat("Input Magnitude", inputMagnitude, 0.05f, Time.deltaTime);
 
             movementDirection = Quaternion.AngleAxis(cameraTransform.rotation.eulerAngles.y, Vector3.up) * movementDirection; //se mueve acorde a la c�mara
             movementDirection.Normalize(); //evitar que se mueva m�s r�pido en diagonal
 
-            ySpeed += Physics.gravity.y * 1.65f * Time.deltaTime;
+            ySpeed += Physics.gravity.y * 2.5f * Time.deltaTime;
 
             SetSlopeSlideVelocity();
 
