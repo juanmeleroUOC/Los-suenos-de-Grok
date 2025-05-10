@@ -3959,11 +3959,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationSpeed: 720
-  jumpSpeed: 5.96
+  jumpSpeed: 5.97
   JumpHorizontalSpeed: 4
   jumpButtonGracePeriod: 0.2
   cameraTransform: {fileID: 6694960452927976113}
-  doubleJumpMultiplier: 1.1
+  doubleJumpMultiplier: 1
   minAirTimeForSlide: 0.73
   isKnocking: 0
   knockbackLength: 0.25
