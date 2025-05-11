@@ -281,6 +281,7 @@ GameObject:
   - component: {fileID: 134231752991377456}
   - component: {fileID: 677893423344209205}
   - component: {fileID: 8116577858408252963}
+  - component: {fileID: 2047876377043178948}
   m_Layer: 0
   m_Name: Main FreeLookCamera-sphere
   m_TagString: Untagged
@@ -526,21 +527,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CollideAgainst:
     serializedVersion: 2
-    m_Bits: 1
-  IgnoreTag: 
+    m_Bits: 4294967295
+  IgnoreTag: Player
   TransparentLayers:
     serializedVersion: 2
     m_Bits: 0
-  MinimumDistanceFromTarget: 0.72
+  MinimumDistanceFromTarget: 0.01
   AvoidObstacles:
     Enabled: 1
     DistanceLimit: 0
     MinimumOcclusionTime: 0
-    CameraRadius: 0.64
+    CameraRadius: 0
     UseFollowTarget:
       Enabled: 0
       YOffset: 0
-    Strategy: 0
+    Strategy: 1
     MaximumEffort: 4
     SmoothingTime: 0
     Damping: 1.5
@@ -551,6 +552,21 @@ MonoBehaviour:
     NearLimit: 5
     FarLimit: 30
     MaxQualityBoost: 0.2
+--- !u!114 &2047876377043178948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 844445766721988506}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4700f9f03ad19f94baf0367cb7a9c988, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Width: 5
+  Damping: 6
+  FovRange: {x: 60, y: 60}
 --- !u!1 &1074695896970655371
 GameObject:
   m_ObjectHideFlags: 0

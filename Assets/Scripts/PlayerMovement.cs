@@ -55,6 +55,10 @@ public class PlayerMovement : MonoBehaviour
     public float bounceForce = 8f;
 
     public bool stopMove;
+    public Vector3 CurrentVelocity { get; private set; }
+    private Vector3 lastPosition;
+
+
 
     private void Awake()
     {
@@ -82,7 +86,7 @@ public class PlayerMovement : MonoBehaviour
 
             float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
 
-            if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.JoystickButton10)) //sprint
+            if ((Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.JoystickButton10)) && !isJumping) //sprint
             {
                 inputMagnitude = 2;
             }
@@ -237,6 +241,9 @@ public class PlayerMovement : MonoBehaviour
             animator.SetFloat("Input Magnitude", 0f);
             animator.SetBool("IsMoving", false);
         }
+
+        CurrentVelocity = (transform.position - lastPosition) / Time.deltaTime;
+        lastPosition = transform.position;
     }
 
     private void SetSlopeSlideVelocity()
