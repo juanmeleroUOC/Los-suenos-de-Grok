@@ -20,6 +20,9 @@ public class EnemyController : MonoBehaviour
     public float timeBetweenAttacks = 2f;
     private float attackCounter;
 
+    private bool hasFirstAttacked;
+
+
     public enum AI_STATE
     {
         Idle,
@@ -110,11 +113,13 @@ public class EnemyController : MonoBehaviour
         if(distanceToPlayer <= attackRange)
         {
             currentState = AI_STATE.Attacking;
-            animator.SetTrigger("Attack");
+          //  animator.SetTrigger("Attack");
             animator.SetBool("IsMoving", false);
             
             agent.velocity = Vector3.zero; //dejarlo quieto cuando ataca
             agent.isStopped = true;
+            attackCounter = 0f; 
+            hasFirstAttacked = false; 
         }
 
         if(distanceToPlayer > chaseRange)
@@ -131,7 +136,37 @@ public class EnemyController : MonoBehaviour
         transform.LookAt(PlayerMovement.instance.transform, Vector3.up);
         transform.rotation = Quaternion.Euler(0f, transform.rotation.eulerAngles.y, 0f);
         attackCounter -= Time.deltaTime;
-        if(attackCounter <= 0)
+
+
+        if (!hasFirstAttacked)
+        {
+            if (distanceToPlayer < attackRange)
+            {
+                animator.SetTrigger("Attack");
+                hasFirstAttacked = true;
+                attackCounter = timeBetweenAttacks;
+            }
+        }
+        else
+        {
+            if (attackCounter <= 0)
+            {
+                if (distanceToPlayer < attackRange)
+                {
+                    animator.SetTrigger("Attack");
+                    attackCounter = timeBetweenAttacks;
+                }
+                else
+                {
+                    currentState = AI_STATE.Idle;
+                    waitCounter = waitAtPoint;
+                    agent.isStopped = false;
+                }
+            }
+        }
+
+
+/*        if (attackCounter <= 0)
         {
             if(distanceToPlayer < attackRange)
             {
@@ -143,6 +178,6 @@ public class EnemyController : MonoBehaviour
                 waitCounter = waitAtPoint;
                 agent.isStopped = false;
             }
-        }
+        }*/
     }
 }
