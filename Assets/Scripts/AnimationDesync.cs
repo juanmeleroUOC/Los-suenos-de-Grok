@@ -8,8 +8,8 @@ public class AnimationDesync : MonoBehaviour
     [Tooltip("Retraso en segundos antes de comenzar la animación. Si es 0, empieza de inmediato. Si es negativo, se elige un valor aleatorio entre 0 y 3.")]
     public float delaySeconds = -1f;
 
-    [Tooltip("Factor de velocidad: >1 hace la animación más lenta (p.ej. 2 significa mitad de velocidad), <1 más rápida.")]
-    [Min(0.01f)]
+    [Tooltip("Factor de velocidad: entre 0.1 y 3. 1 = normal, >1 = más rápida, <1 = más lenta")]
+    [Range(0.1f, 3f)]
     public float speedFactor = 1f;
 
     private Animator animator;
@@ -18,7 +18,7 @@ public class AnimationDesync : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         // Ajustar velocidad de la animación según el factor (factor>1 -> más lenta)
-        animator.speed = 1f / speedFactor;
+        animator.speed = speedFactor;
 
         if (delaySeconds == 0f)
         {

@@ -4154,7 +4154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotationSpeed: 720
   jumpSpeed: 8.5
-  JumpHorizontalSpeed: 4
+  JumpHorizontalSpeed: 5
   jumpButtonGracePeriod: 0.2
   cameraTransform: {fileID: 6694960452927976113}
   doubleJumpMultiplier: 0.9

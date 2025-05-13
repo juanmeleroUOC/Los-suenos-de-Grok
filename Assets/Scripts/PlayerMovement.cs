@@ -77,7 +77,9 @@ public class PlayerMovement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(!isKnocking && !stopMove)
+        animator.ResetTrigger("DoubleJump");
+
+        if (!isKnocking && !stopMove)
         {
             float horizontal = Input.GetAxis("Horizontal");
             float vertical = Input.GetAxis("Vertical");
@@ -171,15 +173,17 @@ public class PlayerMovement : MonoBehaviour
 
                 if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod && !hasDoubleJumped) //doble salto
                 {
+                    animator.SetTrigger("DoubleJump");
+
                     ySpeed = jumpSpeed * doubleJumpMultiplier;
                     // animator.SetBool("IsJumping", true);
-                    animator.SetFloat("JumpSpeedMultiplier", 0.3f); // solo afecta a la animaci�n Jumping
-                    animator.Play("Jumping", 0, 0.05f); // reinicia desde un poco adelante
-                    Invoke(nameof(ResetAnimatorSpeed), 0.3f); //  restaurar velocidad normal
-
+                    //animator.SetFloat("JumpSpeedMultiplier", 0.3f); // solo afecta a la animaci�n Jumping
+                    // animator.Play("Jumping", 0, 0.05f); // reinicia desde un poco adelante
+                    // Invoke(nameof(ResetAnimatorSpeed), 0.3f); //  restaurar velocidad normal
                     isJumping = true;
                     hasDoubleJumped = true;
                     jumpButtonPressedTime = null;
+                    
                 }
             }
 
