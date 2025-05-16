@@ -97,7 +97,7 @@ public class HealthManager : MonoBehaviour
 
     public void UpdateUI()
     {
-        UIManager.instance.healthText.text = currentHealth.ToString();
+        // UIManager.instance.healthText.text = currentHealth.ToString();
 
         switch (currentHealth) 
         {

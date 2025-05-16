@@ -8,8 +8,7 @@ public class UIManager : MonoBehaviour
 {
     public static UIManager instance;
 
-    public Text healthText;
-    public Image healthImage;
+    public Image healthImage, ballPowerUp;
 
     public GameObject pauseScreen, optionsScreen, decisionScreen;
 
@@ -22,7 +21,6 @@ public class UIManager : MonoBehaviour
 
     private void Start()
     {
-        Debug.Log("STARTED CANVAS");
         if (fadeImage != null)
         {
             StartCoroutine(FadeFromBlack());

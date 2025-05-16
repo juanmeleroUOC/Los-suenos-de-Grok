@@ -174,6 +174,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: TurtleShellPBR
       objectReference: {fileID: 0}
+    - target: {fileID: 1524411113276028, guid: e2aafa8770d34a9591b41bedf4e318ba, type: 3}
+      propertyPath: m_TagString
+      value: EnemyShelly
+      objectReference: {fileID: 0}
     - target: {fileID: 4119129120149610, guid: e2aafa8770d34a9591b41bedf4e318ba, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 0.0000021270505
@@ -543,8 +547,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.67, y: 0.12, z: 0.66}
-  m_Center: {x: 0, y: 1.19, z: 0}
+  m_Size: {x: 2.01, y: 2.02, z: 1.95}
+  m_Center: {x: 0, y: 0.5, z: 0}
 --- !u!114 &6552152571896891736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -560,7 +564,7 @@ MonoBehaviour:
   maxHeatlh: 1
   currentHeatlh: 0
   deathSound: 0
-  deathEffect: {fileID: 8103921458553629638, guid: 59eff220baa4a054e9f154f8ab3ac76a, type: 3}
+  deathEffect: {fileID: 399478822292201684, guid: 09cdc87d477b7d6438860992b33b6209, type: 3}
 --- !u!4 &1320950496968348222 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4544219117696442, guid: e2aafa8770d34a9591b41bedf4e318ba, type: 3}
