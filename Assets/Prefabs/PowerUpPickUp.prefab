@@ -122,9 +122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9fc1c35919b57554dbb1b6397f38bb75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  floatAmplitude: 1
+  floatAmplitude: 0.5
   floatDuration: 1.5
-  pickupParticles: {fileID: 0}
 --- !u!1001 &3192682674596706814
 PrefabInstance:
   m_ObjectHideFlags: 0

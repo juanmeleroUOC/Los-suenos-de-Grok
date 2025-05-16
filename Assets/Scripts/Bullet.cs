@@ -70,12 +70,6 @@ public class Bullet : MonoBehaviour
                 Destroy(gameObject);
             }
         }
-        //Añadir si colisiona con un enemigo o una pared que se destruya
-        //if (collision.gameObject.CompareTag("EnemyShelly"))
-        // {
-        //  Debug.Log("COLLISION CON ENEMYSHELLY");
-        // collision.gameObject.GetComponent<EnemyHealthManager>().TakeDamage();
-        // Destroy(gameObject);
-        //}
+       
     }
 }
