@@ -88,7 +88,8 @@ public class PlayerMovement : MonoBehaviour
 
             float inputMagnitude = Mathf.Clamp01(movementDirection.magnitude);
 
-            if ((Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.JoystickButton10)) && !isJumping) //sprint
+            if ((Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift) || Input.GetKey(KeyCode.JoystickButton10))
+                && !isJumping && isGrounded) // solo sprint cuando está en el suelo
             {
                 inputMagnitude = 2;
             }
@@ -171,19 +172,22 @@ public class PlayerMovement : MonoBehaviour
                 }
 
 
-                if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod && !hasDoubleJumped) //doble salto
+                if (Time.time - jumpButtonPressedTime <= jumpButtonGracePeriod)
                 {
-                    animator.SetTrigger("DoubleJump");
-
-                    ySpeed = jumpSpeed * doubleJumpMultiplier;
-                    // animator.SetBool("IsJumping", true);
-                    //animator.SetFloat("JumpSpeedMultiplier", 0.3f); // solo afecta a la animaci�n Jumping
-                    // animator.Play("Jumping", 0, 0.05f); // reinicia desde un poco adelante
-                    // Invoke(nameof(ResetAnimatorSpeed), 0.3f); //  restaurar velocidad normal
-                    isJumping = true;
-                    hasDoubleJumped = true;
-                    jumpButtonPressedTime = null;
-                    
+                    if (!isJumping) // aún no se ha hecho un salto ( cayendo desde altura)
+                    {
+                        ySpeed = jumpSpeed;
+                        animator.SetTrigger("JumpTrigger");
+                        isJumping = true;
+                        jumpButtonPressedTime = null;
+                    }
+                    else if (!hasDoubleJumped) // ya se ha hecho un salto mientras cae ahora doble salto
+                    {
+                        ySpeed = jumpSpeed * doubleJumpMultiplier;
+                        animator.SetTrigger("DoubleJump");
+                        hasDoubleJumped = true;
+                        jumpButtonPressedTime = null;
+                    }
                 }
             }
 
