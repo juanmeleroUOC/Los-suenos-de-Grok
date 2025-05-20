@@ -17,6 +17,10 @@ public class MovingPlatform : MonoBehaviour
     private float _timeToWaypoint;
     private float _elapsedTime;
 
+    [SerializeField]
+    private float _waitTime = 0.5f;
+    private bool _isMoving = true;
+
     void Start()
     {
         TargetNextWaypoint();
@@ -24,6 +28,8 @@ public class MovingPlatform : MonoBehaviour
 
     void LateUpdate()
     {
+        if (!_isMoving) return;
+
         _elapsedTime += Time.deltaTime;
 
         float elapsedPercentage = _elapsedTime / _timeToWaypoint;
@@ -33,7 +39,7 @@ public class MovingPlatform : MonoBehaviour
 
         if (elapsedPercentage >= 1)
         {
-            TargetNextWaypoint();
+            StartCoroutine(WaitAndTargetNextWaypoint()); 
         }
     }
 
@@ -47,6 +53,14 @@ public class MovingPlatform : MonoBehaviour
 
         float distanceToWaypoint = Vector3.Distance(_previousWaypoint.position, _targetWaypoint.position);
         _timeToWaypoint = distanceToWaypoint / _speed;
+    }
+
+    private IEnumerator WaitAndTargetNextWaypoint()
+    {
+        _isMoving = false;
+        yield return new WaitForSeconds(_waitTime);
+        TargetNextWaypoint(); 
+        _isMoving = true; 
     }
 
 }
