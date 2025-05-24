@@ -8,6 +8,7 @@ TagManager:
   - Obstcales
   - EnemyKenops
   - EnemyShelly
+  - BulletBall
   layers:
   - Default
   - TransparentFX

@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Decision 02
   m_EditorClassIdentifier: 
   decisionID: decision_02
-  textoDecision: "\xBFTirar a la basura?"
-  opcion1: "S\xED"
-  opcion2: No
+  textoDecision: "Parece un libro de matem\xE1ticas, \xBFQu\xE9 quieres hacer con
+    \xE9l?"
+  opcion1: Echar un vistazo
+  opcion2: Lanzarlo a un Kenops
