@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class HealthManager : MonoBehaviour
 {
+
     public static HealthManager instance;
 
     public int currentHealth, maxHealth;
@@ -51,9 +52,11 @@ public class HealthManager : MonoBehaviour
 
     public void Hurt(Transform playerTransform)
     {
+
         if (invincCounter <= 0)
         {
             currentHealth--;
+
             if (currentHealth <= 0)
             {
                 currentHealth = 0;
@@ -61,6 +64,8 @@ public class HealthManager : MonoBehaviour
             }
             else
             {
+                Debug.Log(" else");
+
                 // Calcular la dirección del knockback
                 Vector3 knockbackDirection = playerTransform.position - transform.position;
                 knockbackDirection.Normalize(); // Normalizamos la dirección
@@ -69,8 +74,9 @@ public class HealthManager : MonoBehaviour
                 PlayerMovement.instance.Knockback(knockbackDirection);
 
                 invincCounter = invincibleLength;
+                AudioManager.instance.PlaySFX(0);
 
-                //ToDo añadir sonido daño
+
             }
         }
         UpdateUI();
@@ -125,6 +131,7 @@ public class HealthManager : MonoBehaviour
     public void PlayerKilled()
     {
         currentHealth = 0;
+        AudioManager.instance.PlaySFX(0);
         UpdateUI();
     }
 
