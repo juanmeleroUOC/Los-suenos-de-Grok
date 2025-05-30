@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System.Collections;
+using UnityEngine.EventSystems;
 
 public class UIManager : MonoBehaviour
 
@@ -10,8 +11,9 @@ public class UIManager : MonoBehaviour
 
     public Image healthImage, ballPowerUp;
 
-    public GameObject pauseScreen, optionsScreen, decisionScreen;
+    public GameObject pauseScreen, optionsScreen, decisionScreen, controlsScreen;
 
+    public GameObject pauseFirstSelected;
 
     public Slider musicVolSlider, sfxVolSlider;
 
@@ -67,6 +69,7 @@ public class UIManager : MonoBehaviour
     public void CloseOptions() 
     { 
         optionsScreen.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(UIManager.instance.pauseFirstSelected);
 
     }
 
@@ -99,6 +102,18 @@ public class UIManager : MonoBehaviour
     public void CloseDecisionScreen()
     {
         decisionScreen.SetActive(false);
+
+    }
+
+    public void OpenControls()
+    {
+        controlsScreen.SetActive(true);
+    }
+
+    public void CloseControls()
+    {
+        controlsScreen.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(UIManager.instance.pauseFirstSelected);
 
     }
 }

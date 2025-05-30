@@ -1,8 +1,8 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.Diagnostics;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,6 +22,9 @@ public class GameManager : MonoBehaviour
 
     public Checkpoint activeCheckpoint;
 
+
+
+
     private void Awake()
     {
         instance = this;
@@ -34,10 +37,9 @@ public class GameManager : MonoBehaviour
         respawnPosition = PlayerMovement.instance.transform.position;
     }
 
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) || Input.GetKeyDown(KeyCode.JoystickButton9))
         {
             PauseUnpause();
         }
@@ -91,7 +93,10 @@ public class GameManager : MonoBehaviour
         { //Estamos en pantalla pausa
             UIManager.instance.pauseScreen.SetActive(true);
 
+
             UIManager.instance.CloseOptions();
+
+            EventSystem.current.SetSelectedGameObject(UIManager.instance.pauseFirstSelected);
 
             Time.timeScale = 0f;
 

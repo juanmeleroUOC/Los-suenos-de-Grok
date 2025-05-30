@@ -6213,7 +6213,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2810053126849677291, guid: 3b136f8598865bb49905d75dd74dbedf, type: 3}
       propertyPath: _waitTime
-      value: 1.5
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3435412522397219424, guid: 3b136f8598865bb49905d75dd74dbedf, type: 3}
       propertyPath: m_Mesh
@@ -11038,11 +11038,11 @@ PrefabInstance:
     - target: {fileID: 7032255150873748969, guid: af390b57ac7aab74e956960147c53585, type: 3}
       propertyPath: m_Resource
       value: 
-      objectReference: {fileID: 8300000, guid: 5acfdbb382daa914a984e754cd5dfe4d, type: 3}
+      objectReference: {fileID: 8300000, guid: 496cc7831b1feb5408d0d65ec2c13675, type: 3}
     - target: {fileID: 7032255150873748969, guid: af390b57ac7aab74e956960147c53585, type: 3}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: 5acfdbb382daa914a984e754cd5dfe4d, type: 3}
+      objectReference: {fileID: 8300000, guid: 496cc7831b1feb5408d0d65ec2c13675, type: 3}
     - target: {fileID: 7201184969884804139, guid: af390b57ac7aab74e956960147c53585, type: 3}
       propertyPath: decisionData
       value: 
