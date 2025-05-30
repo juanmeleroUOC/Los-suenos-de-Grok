@@ -15925,6 +15925,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7550966042631964428, guid: af390b57ac7aab74e956960147c53585, type: 3}
+      propertyPath: 'sfx.Array.data[0]'
+      value: 
+      objectReference: {fileID: 1184377255}
     - target: {fileID: 8646844492892334803, guid: af390b57ac7aab74e956960147c53585, type: 3}
       propertyPath: nextLevel
       value: FinalScene
@@ -15936,6 +15940,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af390b57ac7aab74e956960147c53585, type: 3}
+--- !u!82 &1184377255 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 3038106942032970757, guid: af390b57ac7aab74e956960147c53585, type: 3}
+  m_PrefabInstance: {fileID: 1184377254}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1186404332 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4533943726500818, guid: 2224b63330275e5478ef024b2913f937, type: 3}
